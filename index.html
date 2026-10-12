@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry Bachaa ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #762444;
+  background: linear-gradient(135deg, #ffe0eb, #ffb6cd, #fff0f5);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.88);
+  border-radius: 25px;
+  box-shadow: 0 10px 35px #c75b8040;
+}
+
+h1 {
+  font-size: 42px;
+  color: #d6336c;
+}
+
+h2 {
+  color: #c2185b;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.heart {
+  position: fixed;
+  bottom: -40px;
+  animation: float 9s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(40deg);
+    opacity: 0;
+  }
+}
+
+button {
+  background: linear-gradient(45deg, #ff4d88, #d6336c);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 23px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 12px;
+}
+
+.message {
+  display: none;
+  background: #fff0f5;
+  padding: 18px;
+  border-radius: 18px;
+  margin-top: 15px;
+}
+
+.sorry {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.sorry div {
+  padding: 10px 4px;
+  border-radius: 12px;
+  background: #ffe0eb;
+  font-size: 13px;
+  color: #b71553;
+}
+
+@media (min-width: 500px) {
+  .sorry {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<div class="container">
+
+  <h1>I'm Sorry, Bachaa ❤️🥺</h1>
+
+  <p>
+    Meri pyaari Bachaa, please ek baar meri baat sun lo. 💗
+  </p>
+
+  <h2>Dil Se Sorry 😭❤️‍🩹</h2>
+
+  <p>
+    Bachaa, maine gusse mein tumhe bahut kuch bol diya.
+    Us waqt maine apne gusse par control nahi kiya,
+    aur ab mujhe apni galti ka ehsaas ho raha hai.
+  </p>
+
+  <p>
+    Mujhe sach mein bahut afsos hai ki meri baaton se
+    tumhe dukh pahuncha. Tum deserve karti ho ki main
+    tumse pyaar aur respect se baat karun, chahe main
+    kitna bhi gusse mein kyun na hoon. ❤️
+  </p>
+
+  <p>
+    Bachaa, main tumse bahut zyada pyaar karta hoon.
+    Tum mere liye bahut special ho. Main apni galti ko
+    sirf sorry bolkar nahi, balki apne actions se bhi
+    sudharna chahta hoon. 🫂💗
+  </p>
+
+  <p>
+    Main tumhari feelings ko samajhna chahta hoon,
+    tumhari baat sunna chahta hoon aur aage se apne
+    words ka dhyan rakhne ki koshish karunga.
+  </p>
+
+  <p>
+    Please mujhe maaf karne ke liye jaldi mat karna.
+    Main tumhe time aur space dunga.
+    Bas itna chahta hoon ki tumhe pata ho ki
+    mujhe apni galti ka sach mein regret hai. ❤️‍🩹
+  </p>
+
+  <h2>I Love You So Much, Bachaa 💋❤️</h2>
+
+  <button onclick="showMessage()">
+    Open My Little Love Letter 💌
+  </button>
+
+  <div class="message" id="loveLetter">
+    <h2>Meri Bachaaaa 😭💗</h2>
+    <p>
+      I am really, really sorry, meri jaan.
+      Kaash main apni kahi hui baatein wapas le pata.
+      Main tumhe hurt nahi karna chahta tha,
+      lekin main jaanta hoon ki meri galti thi.
+      Main tumse bahut pyaar karta hoon.
+      I'm sorry, Bachaa. ❤️🫂
+    </p>
+  </div>
+
+</div>
+
+<div class="container">
+  <h2>100 Times Sorry, Bachaa 😭❤️</h2>
+
+  <p>Har sorry dil se hai, meri jaan. 💗</p>
+
+  <div class="sorry" id="sorryList"></div>
+</div>
+
+<div class="container">
+  <h2>A Promise From My Heart 🫶</h2>
+
+  <p>
+    ❤️ Main gusse mein apne words ka dhyan rakhunga.<br>
+    💗 Main tumhari feelings ko samajhne ki koshish karunga.<br>
+    🫂 Main tumhari baat bina argue kiye sununga.<br>
+    🌷 Main apni galti sudharne ki poori koshish karunga.
+  </p>
+
+  <h2>Sorryyyy, Meri Bachaa 😭💋</h2>
+  <p>Made with love, from my heart to yours. 💌</p>
+</div>
+
+<script>
+function showMessage() {
+  const msg = document.getElementById("loveLetter");
+
+  if (msg.style.display === "block") {
+    msg.style.display = "none";
+  } else {
+    msg.style.display = "block";
+  }
+}
+
+const list = document.getElementById("sorryList");
+
+for (let i = 1; i <= 100; i++) {
+  const item = document.createElement("div");
+  item.textContent = i + ". Sorryyyy Bachaa 😭❤️";
+  list.appendChild(item);
+}
+
+const heartBox = document.getElementById("hearts");
+
+for (let i = 0; i < 22; i++) {
+  const heart = document.createElement("div");
+
+  heart.className = "heart";
+  heart.textContent = ["❤️", "💗", "💕", "💖"][i % 4];
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (6 + Math.random() * 8) + "s";
+  heart.style.animationDelay = (-Math.random() * 12) + "s";
+  heart.style.fontSize = (18 + Math.random() * 20) + "px";
+
+  heartBox.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
